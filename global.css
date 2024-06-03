@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+
+    background-color: var(--background-color);
+}
+:root{
+
+    --text-color: #4A4A4A;
+    --background-color: #F8F4EF;
+    --primary-color: #BE9971;
+    --secundary-color: #E5BC91;
+    --contrast-color: #D8E2DC;
+}
+
+.max-width{
+
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 4rem;
+    margin: 0 auto;
+    margin-bottom: 26rem;
+}
