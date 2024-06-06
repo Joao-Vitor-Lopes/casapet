@@ -1,12 +1,12 @@
 header{
 
     padding: 1.5rem;
+    min-height: 100vh;
 }
 
 .container{
    
     width: 92%;
-    
     align-items: center;
     justify-content: center;
     margin-top: 15%;
@@ -17,9 +17,8 @@ header{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    
-    width: 820px;
-    height: 410px;
+    width: 57%;
+    height: 40%;
     border: solid 3px var(--tittle-color);
     overflow: hidden;
     transition: transform 1s;
@@ -27,39 +26,35 @@ header{
 }
 
 .banner{
-    border: 1px solid black;
+   
     display: flex;
     
-    
 }
   
-  .radio-buttons {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .radio-button {
-    display: none;
-  }
-  
-  .radio-label {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ccc;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-  
-  .radio-button:checked + .radio-label {
-    background-color: var(--primary-color);
-  }
 
-  #radio1:checked ~ .banner {
-    transform: translateX(0);
+.buttons-header{
+
+  display: flex;
+  justify-content: center;
 }
 
-    #radio2:checked ~ .banner {
-    transform: translateX(-100%);
+.container .buttons-header button{
+
+  padding: 1rem 1.5rem;
+  margin-top: 4rem;
+  min-width: 35%;
+  border-radius: 1rem;
+  border: none;
+  margin: 3rem 1rem 0;
+}
+
+.divulgar{
+
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.adotar{
+
+  background-color: var(--contrast-color);
 }
