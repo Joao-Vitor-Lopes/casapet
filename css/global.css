@@ -25,4 +25,10 @@ body{
     margin: 0 auto;
     margin-bottom: 26rem;
     
+    
+}
+
+section{
+
+    min-height: 120vh;
 }

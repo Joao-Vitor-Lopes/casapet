@@ -5,57 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/export.css">
     <title>Casa Pet</title>
-    <!-- #BE9971 - Cor principal (marrom suave)
-#E5BC91 - Cor segundaria (pêssego suave)
-#F8F4EF - Fundo principal
-#4A4A4A - Texto principal
-#D8E2DC - Destaque (verde suave) -->
 </head>
 <body>
-
     <nav class="navbar max-width">
         <div class="nav-content">
-        <img src="fotos/logotipo.svg" alt="Casa Pet">
-        
-        <ul>
-           
-            <li><a href="#home">Home</a></li>
-            <li><a href="#adote">Quero Adotar</a></li>
-            <li><a href="#sobre">Quem Somos</a></li>
-            <li><img src="fotos/icon1.svg"></li>
-            <li><img src="fotos/icon2.svg"></li>
-            <li><img src="fotos/icon3.svg"></li>
-            <a class="Login" href="">Login</a>
-            <button>Cadastre-se</button>
-           
-        </ul>
-
+            <img src="fotos/logotipo.svg" alt="Casa Pet">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#adote">Quero Adotar</a></li>
+                <li><a href="#sobre">Quem Somos</a></li>
+                <li><img src="fotos/icon1.svg"></li>
+                <li><img src="fotos/icon2.svg"></li>
+                <li><img src="fotos/icon3.svg"></li>
+                <a class="Login" href="">Login</a>
+                <button>Cadastre-se</button>
+            </ul>
         </div>
     </nav>
-
-    <header id="home" class="max-width">
-
-        <div class="container">
-            <div class="banner-container">
-              <div class="banner">
-
-                <img src="fotos/banner1.svg">
-                <img src="fotos/banner2.svg">
-                
-              </div>
+    <section id="home" class="max-width">
+        <header>
+            <div class="container">
+                <div class="banner-container">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1" checked>
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <div class="banner">
+                            <img src="fotos/banner1.svg">
+                            <img src="fotos/banner2.svg">
+                        </div>
+                    </div>
+                    <div class="manual-navigation">
+                        <button id="prev-btn" class="nav-btn">&lt;</button>
+                        <button id="next-btn" class="nav-btn">&gt;</button>
+                    </div>
+                </div>
+                <div class="buttons-header">
+                    <button class="adotar">Quero Adotar</button>
+                    <button class="divulgar">Quero divulgar um animal</button>
+                </div>
             </div>
-
-            
-            <div class="buttons-header">
-
-              <button class="adotar">Quero Adotar</button>
-              <button class="divulgar">Quero divulgar um animal</button>
-            
-            </div>
-            
-        </div>
-    </header>
-    
+        </header>
+    </section>
     <script src="js/banner.js"></script>
 </body>
 </html>

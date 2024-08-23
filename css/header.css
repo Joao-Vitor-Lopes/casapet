@@ -1,45 +1,37 @@
-header{
-
-    padding: 1.5rem;
-    min-height: 100vh;
+header {
+  padding: 1.5rem;
+  min-height: 100vh;
 }
 
-.container{
-   
-    width: 92%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15%;
+.container {
+  width: 92%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15%;
 }
 
-.banner-container{
-
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 57%;
-    height: 40%;
-    border: solid 3px var(--tittle-color);
-    overflow: hidden;
-    transition: transform 1s;
-    
+.banner-container {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 820px;
+  height: 410px;
+  border: solid 3px var(--tittle-color);
+  overflow: hidden;
+  transition: transform 1s;
 }
 
-.banner{
-   
-    display: flex;
-    
+.banner {
+  display: flex;
 }
-  
 
-.buttons-header{
-
+.buttons-header {
   display: flex;
   justify-content: center;
 }
 
-.container .buttons-header button{
-
+.container .buttons-header button {
   padding: 1rem 1.5rem;
   margin-top: 4rem;
   min-width: 35%;
@@ -48,13 +40,55 @@ header{
   margin: 3rem 1rem 0;
 }
 
-.divulgar{
-
+.divulgar {
   background-color: var(--primary-color);
   color: var(--background-color);
 }
 
-.adotar{
-
+.adotar {
   background-color: var(--contrast-color);
+}
+
+.manual-navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.nav-btn {
+    background-color: var(--background-color);
+    border: none;
+    color: var(--primary-color);
+    padding: 10px;
+    width: 40px; 
+    height: 40px; 
+    font-size: 200%; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  
+}
+
+#radio1:checked ~ .banner {
+  transform: translateX(0);
+  transition: 1s;
+}
+
+#radio2:checked ~ .banner {
+  transform: translateX(-100%);
+  transition: 1s;
+}
+
+input[name="radio-btn"] {
+    display: none;
 }
