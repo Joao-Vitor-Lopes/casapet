@@ -40,3 +40,5 @@ document.getElementById('prev-btn').addEventListener('click', () => {
 
 // Inicializa o carrossel automático
 startAutoSlide();
+
+

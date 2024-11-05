@@ -28,6 +28,12 @@ header {
   width: 100%; /* 100% x número total de slides */
 }
 
+.banner img{
+
+  width: 820px;
+  height: 410px;
+}
+
 .buttons-header {
   display: flex;
   justify-content: center;
@@ -104,3 +110,4 @@ header {
 .radio-button:checked + .radio-label {
   background-color: #333;
 }
+
