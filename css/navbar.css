@@ -8,6 +8,7 @@
     z-index: 10;
     background-color: var(--background-color);
     padding: 0 1rem;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
 }
 
 .nav-content{

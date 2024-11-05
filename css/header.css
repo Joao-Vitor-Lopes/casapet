@@ -16,7 +16,7 @@ header {
   align-items: center;
   margin: 0 auto;
   width: 820px;
-  height: 410px;
+  height: auto;
   border: solid 3px var(--tittle-color);
   overflow: hidden;
   transition: transform 1s;
@@ -24,6 +24,8 @@ header {
 
 .banner {
   display: flex;
+  transition: transform 1.5s ease;
+  width: 100%; /* 100% x número total de slides */
 }
 
 .buttons-header {
@@ -79,16 +81,26 @@ header {
   
 }
 
-#radio1:checked ~ .banner {
-  transform: translateX(0);
-  transition: 1s;
+
+.radio-buttons {
+  text-align: center;
+  margin-top: 10px;
 }
 
-#radio2:checked ~ .banner {
-  transform: translateX(-100%);
-  transition: 1s;
+.radio-button {
+  display: none;
 }
 
-input[name="radio-btn"] {
-    display: none;
+.radio-label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.radio-button:checked + .radio-label {
+  background-color: #333;
 }

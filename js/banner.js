@@ -1,26 +1,42 @@
-let count = 1;
-document.getElementById("radio1").checked = true;
+let currentSlide = 1;
+const totalSlides = 6;
+let slideInterval;
 
-setInterval(function() {
-    nextImage();
-}, 10000);
-
-function nextImage() {
-    count++;
-    if (count > 2) {
-        count = 1;
-    }
-    document.getElementById("radio" + count).checked = true;
+function updateSlidePosition() {
+    const banner = document.querySelector('.banner');
+    const offset = (currentSlide - 1) * -100;
+    banner.style.transform = `translateX(${offset}%)`;
+    document.querySelector(`#radio${currentSlide}`).checked = true;
 }
 
-document.getElementById("prev-btn").addEventListener("click", function() {
-    count--;
-    if (count < 1) {
-        count = 2;
-    }
-    document.getElementById("radio" + count).checked = true;
+function nextSlide() {
+    currentSlide = (currentSlide % totalSlides) + 1;
+    updateSlidePosition();
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 2 + totalSlides) % totalSlides + 1;
+    updateSlidePosition();
+}
+
+function startAutoSlide() {
+    slideInterval = setInterval(nextSlide, 3000); // Troca a cada 3 segundos
+}
+
+function pauseAutoSlide() {
+    clearInterval(slideInterval);
+    startAutoSlide();
+}
+
+document.getElementById('next-btn').addEventListener('click', () => {
+    pauseAutoSlide();
+    nextSlide();
 });
 
-document.getElementById("next-btn").addEventListener("click", function() {
-    nextImage();
+document.getElementById('prev-btn').addEventListener('click', () => {
+    pauseAutoSlide();
+    prevSlide();
 });
+
+// Inicializa o carrossel automático
+startAutoSlide();
