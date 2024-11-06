@@ -13,27 +13,29 @@
     
     <nav class="navbar max-width">
         <div class="nav-content">
-            <img src="fotos/logotipo.svg" alt="Casa Pet">
+            <a href="/"><img src="fotos/logotipo.svg" alt="Logotipo Casa Pet"></a>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#adote">Quero Adotar</a></li>
-                <li><a href="#sobre">Quem Somos</a></li>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#loja">Quero comprar</a></li>
+                <li><a href="#agenda">Agendamento</a></li>
                 <li><img src="fotos/icon1.svg"></li>
                 <li><img src="fotos/icon2.svg"></li>
                 <li><img src="fotos/icon3.svg"></li>
-                <a class="Login" href="">Login</a>
-                <button>Cadastre-se</button>
             </ul>
+            <div class="carrinho">
+                <img src="fotos/carrinho.svg" alt="Carrinho">
+            </div>
+            
         </div>
     </nav>
    
         <main>
-            <section class="max-width home">
+            <section id="home" class="home">
                 <div class="home-text"> 
                     <h4 class="title-home">Bem-vindo(a) à CASA PET</h4>
                     <h1 class="subtitle-home">Tudo que seu pet precisa está aqui!</h1>
                     <p>Oferecemos tudo o que seu pet precisa: produtos de qualidade, serviços de banho, tosa e atendimento veterinário com uma equipe experiente e cuidadosa. Aqui, o bem-estar do seu bichinho é nossa prioridade!</p>
-                    <a href="#" class="home-btn">Compre Já!</a>
+                    <a href="#" class="home-btn">Compre Já &#8594;</a>
                 </div>
                 <div class="home-image">
                     <img src="fotos/home.svg">
@@ -43,12 +45,12 @@
             
         </main>
     
-    <section id="home" class="max-width">
+    <section id="header" class="max-width">
         <header>
             <div class="container">
                 <div class="buttons-header">
-                    <button class="adotar">Quero Adotar</button>
-                    <button class="divulgar">Quero divulgar um animal</button>
+                    <button class="adotar">Agende seu horário</button>
+                    <button class="divulgar">Quero comprar</button>
                 </div>
                 <div class="banner-container">
                     <div class="slides">
@@ -66,17 +68,17 @@
                         <button id="next-btn" class="nav-btn">&gt;</button>
                     </div>
                     <div class="radio-buttons">
-                        <input type="radio" name="slide" class="radio-button" id="radio1" checked>
+                        <input type="radio" name="slide" class="radio-button" id="radio1" disabled>
                         <label class="radio-label" for="radio1"></label>
-                        <input type="radio" name="slide" class="radio-button" id="radio2">
+                        <input type="radio" name="slide" class="radio-button" id="radio2" disabled>
                         <label class="radio-label" for="radio2"></label>
-                        <input type="radio" name="slide" class="radio-button" id="radio3">
+                        <input type="radio" name="slide" class="radio-button" id="radio3" disabled>
                         <label class="radio-label" for="radio3"></label> 
-                        <input type="radio" name="slide" class="radio-button" id="radio4">
+                        <input type="radio" name="slide" class="radio-button" id="radio4" disabled>
                         <label class="radio-label" for="radio1"></label>
-                        <input type="radio" name="slide" class="radio-button" id="radio5">
+                        <input type="radio" name="slide" class="radio-button" id="radio5" disabled>
                         <label class="radio-label" for="radio2"></label>
-                        <input type="radio" name="slide" class="radio-button" id="radio6">
+                        <input type="radio" name="slide" class="radio-button" id="radio6" disabled>
                         <label class="radio-label" for="radio3"></label> 
                     </div>
                 </div>
@@ -84,6 +86,20 @@
             </div>
         </header>
     </section>
+
+    <section class="max-width home right">
+        <div class="home-text"> 
+            <h4 class="title-home">CASA PET</h4>
+            <h1 class="subtitle-home">Todo cuidado que seu pet merece</h1>
+            <p>Encontre tudo o que seu pet precisa para uma vida cheia de conforto e bem-estar! Dos essenciais diários aos mimos especiais, oferecemos acessórios, alimentação de qualidade, itens de conforto e cuidados que fazem a diferença. Seu pet merece o melhor, e estamos aqui para proporcionar isso!</p>
+            <a href="#" class="home-btn btn-right">Compre Já &#8594;</a>
+        </div>
+        <div class="home-image">
+            <img src="fotos/home2.svg">
+        </div>
+
+    </section>
     <script src="js/banner.js"></script>
+    <script src="https://kit.fontawesome.com/80bd0ef0a0.js" crossorigin="anonymous"></script>
 </body>
 </html>

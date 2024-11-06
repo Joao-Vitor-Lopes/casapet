@@ -1,13 +1,14 @@
 header {
   padding: 1.5rem;
   min-height: 100vh;
+  
 }
 
 .container {
   width: 92%;
   align-items: center;
   justify-content: center;
-  margin-top: 15%;
+
 }
 
 .banner-container {
@@ -37,15 +38,28 @@ header {
 .buttons-header {
   display: flex;
   justify-content: center;
+  margin-bottom: 10%;
+  
+  
 }
 
-.container .buttons-header button {
+
+.buttons-header button:hover {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  
+}
+
+.buttons-header button {
   padding: 1rem 1.5rem;
   margin-top: 4rem;
   min-width: 35%;
   border-radius: 1rem;
   border: none;
   margin: 3rem 1rem 0;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
 }
 
 .divulgar {
@@ -91,10 +105,13 @@ header {
 .radio-buttons {
   text-align: center;
   margin-top: 10px;
+  cursor: default;
+  
 }
 
 .radio-button {
   display: none;
+  
 }
 
 .radio-label {
@@ -104,7 +121,7 @@ header {
   border-radius: 50%;
   background-color: #ccc;
   margin: 0 5px;
-  cursor: pointer;
+
 }
 
 .radio-button:checked + .radio-label {
