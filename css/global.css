@@ -7,15 +7,17 @@
 
 body{
 
-    background-color: var(--background-color);
+    background-color: var(--white);
+    color: #2C2C2C;
 }
 :root{
 
-    --text-color: #4A4A4A;
-    --background-color: #F8F4EF;
-    --primary-color: #BE9971;
-    --secundary-color: #E5BC91;
-    --contrast-color: #D8E2DC;
+    --white: #F6F6F6;
+    --primary-color: #d63a25;
+    --secundary-color: #fc4c35;
+    --contrast-color: #4a4a4a;
+    --text-color: #2C2C2C;
+
 }
 
 .max-width{

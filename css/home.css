@@ -15,6 +15,7 @@
     text-align: justify;
     display: flex;
     flex-direction: column;
+
 }
 
 .home-text .title-home{
@@ -36,7 +37,7 @@
 .home-btn{
     padding: 15px 45px;
     background-color: var(--primary-color);
-    color: var(--contrast-color);
+    color: var(--white);
     text-decoration: none;
     border-radius: 10px;
     font-weight: 700;
