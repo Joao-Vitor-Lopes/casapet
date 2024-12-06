@@ -62,11 +62,75 @@
 .carrinho {
     display: flex;
     align-items: center;
+    
+    
 }
 
+.carrinho img:last-child{
+    margin-left: 50%;
+}
 
 nav ul li:hover{
 
     transform: translateY(-4px);
     transition: all 0.2s 
+}
+
+.menu{
+    display: none;
+}
+
+@media  (max-width: 1000px){
+    nav ul li img{
+        display: none;
+    }
+}
+    
+@media  (max-width: 800px){
+    
+    .navbar .nav-content{
+        position: relative;
+        right: 5%;
+    }
+
+    .navbar .nav-content ul{
+        position: relative;
+        left: 5%;
+    }
+    
+     .navbar .nav-content ul{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.8); 
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        border-top: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        top: 190px;
+        text-align: center;
+       
+        
+            
+    }
+    .navbar .nav-content ul li a{
+    padding: 1rem;
+    }
+    
+    .navbar .nav-content ul li a:hover{
+        
+        background-color: black;
+    }
+
+    .navbar .nav-content ul{
+        display: none;
+    }
+    
+    .navbar .show-menu ul{
+        display: flex;
+    }
+
+    .menu{
+        display: block;
+    }
+    
 }
