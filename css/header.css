@@ -32,6 +32,14 @@ header {
 
   width: 820px;
   height: 410px;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  cursor: pointer;
+}
+.banner img:hover{
+
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
 }
 
 .buttons-header {
@@ -50,7 +58,7 @@ header {
 }
 
 .buttons-header button {
-  padding: 1rem 1.5rem;
+  padding: 1rem 5rem;
   margin-top: 4rem;
   min-width: 35%;
   border-radius: 1rem;

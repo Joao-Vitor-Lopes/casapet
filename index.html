@@ -13,8 +13,8 @@
         <div class="nav-content">
             <a href="/"><img src="fotos/logotipo.svg" alt="Logotipo Casa Pet"></a>
             <ul>
-                <li><a href="#main">Home</a></li>
-                <li><a href="#loja">Loja</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="#main-section">Loja</a></li>
                 <li><a href="#agenda">Agendamento</a></li>
                 <li><img src="fotos/icon1.svg"></li>
                 <li><img src="fotos/icon2.svg"></li>
@@ -48,18 +48,20 @@
         <header>
             <div class="container">
                 <div class="buttons-header">
-                    <button class="agendar">Agende seu horário</button>
-                    <button class="comprar">Quero comprar</button>
+                    <a href=""><button class="agendar">Agende seu horário</button></a>
+                    <a href="#main-section"><button class="comprar">Quero comprar</button></a>
                 </div>
                 <div class="banner-container">
                     <div class="slides">
                         <div class="banner">
-                            <img src="fotos/banner1.png">
-                            <img src="fotos/banner2.png">
-                            <img src="fotos/banner3.png">
-                            <img src="fotos/banner4.png">
-                            <img src="fotos/banner5.png">
-                            <img src="fotos/banner6.png">
+                            
+                            <a href="#main-section"><img src="fotos/banner1.png"></a>
+                            <a href="#main-section"><img src="fotos/banner2.png"></a>
+                            <a href="#main-section"><img src="fotos/banner3.png"></a>
+                            <a href="#main-section"><img src="fotos/banner4.png"></a>
+                            <a href="#main-section"><img src="fotos/banner5.png"></a>
+                            <a href="#main-section"><img src="fotos/banner6.png"></a>
+                           
                         </div>
                     </div>
                     <div class="manual-navigation">
@@ -98,6 +100,32 @@
         </div>
 
     </section>
+    
+    <main id="main-section">
+        <h3 class="title-section">Itens em Destaque</h3>
+        <div class="border-subtitle"></div>
+        <div class="gray-background">
+            <div class="page-content">
+                <div class="cols cols-3">
+                    <img src="fotos/destaque1.png" alt="Destaque 1">
+                    <img src="fotos/destaque2.png" alt="Destaque 2">
+                    <img src="fotos/destaque3.png" alt="Destaque 3">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="page-inner-content">
+                <h3 class="title-section">Lista de Produtos</h3>
+                <div class="border-subtitle"></div>
+                <div class="cols cols-4">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
     <script src="js/banner.js"></script>
     <script src="https://kit.fontawesome.com/80bd0ef0a0.js" crossorigin="anonymous"></script>
     <script src="js/menubar.js"></script>
