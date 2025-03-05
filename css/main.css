@@ -65,9 +65,9 @@ main{
   .products-grid {
     display: grid;
     justify-content: center;
-    padding: 4rem 1rem;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    padding: 4rem 6rem 0.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
   }
   
   .product-card {
@@ -80,7 +80,9 @@ main{
     border-radius: 8px;
     padding: 1rem;
     width: 100%;
+    height: 100%;
     text-align: center;
+    justify-content: center;
     -webkit-transition: -webkit-transform 0.7s ease;
     transition: transform 0.7s ease;
   }
