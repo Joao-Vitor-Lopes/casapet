@@ -1,0 +1,32 @@
+.breed img{
+    width: 99px;
+    height: 99px;
+    border-radius: 10px;
+}
+
+.breed-content{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem 1rem;
+}
+
+
+
+.breed-list{
+    display: flex;
+}
+
+.breed-list-item{
+    list-style: none;
+    margin: 0 0.5rem;
+    
+}
+
+.breed-list p{
+    max-width: 99px;
+    text-align: center;
+    font-style: bold;
+    font-weight: 600;
+    color: #474747;
+}
+
