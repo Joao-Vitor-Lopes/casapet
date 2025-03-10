@@ -66,6 +66,10 @@
     
 }
 
+.carrinho img{
+    cursor: pointer;
+}
+
 .carrinho img:last-child{
     margin-left: 50%;
 }

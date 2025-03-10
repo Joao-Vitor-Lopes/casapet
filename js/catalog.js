@@ -33,11 +33,11 @@ const products = [
     { id: 25, name: 'Brinquedo Mordedor com Bola para cachorro', price: 'R$ 59,90', image: './fotos/loja/25.png', rate: '&#9733; &#9733; &#9733; &#9733; &#9734;' },
     { id: 26, name: 'MY PET BRASIL - Brinquedo Para Cachorro, Bola Cravinho, Brinquedo Mordedor', price: 'R$ 9,90', image: './fotos/loja/26.png', rate: '&#9733; &#9733; &#9733; &#9733; &#9734;' },
     { id: 27, name: 'Brinquedo de Pelúcia para Cachorros - Macaco AUmigão', price: 'R$ 39,90', image: './fotos/loja/27.png', rate: '&#9733; &#9733; &#9733; &#9733; &#9734;' },
-    { id: 28, name: 'Brinquedo Para Gatos Com Erva De Gato Catnip Bola Sisal', price: '21,59', image: './fotos/loja/28.png', rate: '&#9733; &#9733; &#9733; &#9733; &#9734;' },
-    { id: 29, name: '.', price: '.', image: './fotos/loja/29.png', rate: '&#9733; &#9733; &#9733; &#9733; &#9734;' },
-    { id: 30, name: '.', price: '.', image: './fotos/loja/30.png', rate: '&#9733; &#9733; &#9733; &#9733; &#9734;' },
-    { id: 31, name: '.', price: '.', image: './fotos/loja/31.png', rate: '&#9733; &#9733; &#9733; &#9733; &#9734;' },
-    { id: 32, name: '.', price: '.', image: './fotos/loja/32.png', rate: '&#9733; &#9733; &#9733; &#9733; &#9734;' },
+    { id: 28, name: 'Brinquedo Para Gatos Com Erva De Gato Catnip Bola Sisal', price: 'R$ 21,59', image: './fotos/loja/28.png', rate: '&#9733; &#9733; &#9733; &#9733; &#9734;' },
+    { id: 29, name: 'Arranhador Para Gatos Poste Sisal Brinquedo Com Bolinha Pet', price: 'R$ 42,90', image: './fotos/loja/29.png', rate: '&#9733; &#9733; &#9733; &#9733; &#9734;' },
+    { id: 30, name: 'Brinquedos Pets Coisas Para Cachorros Pelúcia Para Cães Top', price: 'R$ 21,50', image: './fotos/loja/30.png', rate: '&#9733; &#9733; &#9733; &#9733; &#9734;' },
+    { id: 31, name: 'Brinquedo Pelúcia Pet para Cães e Gatos - Melancia / 14x8cm', price: 'R$ 49,90', image: './fotos/loja/31.png', rate: '&#9733; &#9733; &#9733; &#9733; &#9734;' },
+    { id: 32, name: 'Combo Au.migos Pets: Shampoo 5 Em 1 400ml + Condicionador 40', price: 'R$ 119,90', image: './fotos/loja/32.png', rate: '&#9733; &#9733; &#9733; &#9733; &#9734;' },
     { id: 33, name: '.', price: '.', image: './fotos/loja/33.png', rate: '&#9733; &#9733; &#9733; &#9733; &#9734;' },
     { id: 34, name: '.', price: '.', image: './fotos/loja/34.png', rate: '&#9733; &#9733; &#9733; &#9733; &#9734;' },
     { id: 35, name: '.', price: '.', image: './fotos/loja/35.png', rate: '&#9733; &#9733; &#9733; &#9733; &#9734;' },
@@ -94,29 +94,6 @@ const products = [
 
 
   ];
-
-  
-  // Display featured products
-  /* const featuredProductsContainer = document.getElementById('featuredProducts');
-  
-  products.slice(0, 11).forEach(product => {
-    const productCard = document.createElement('div');
-    productCard.className = 'product-card';
-  
-    productCard.innerHTML = `
-      <img src="${product.image}" alt="${product.name}">
-      <h3 class="center-product">${product.name}</h3>
-      <p class="price">
-    ${product.originalPrice ? `<span class="original-price">${product.originalPrice}</span>` : ''}
-    <span>${product.price}</span>
-  </p>
-      <div class="rate"> ${product.rate}</div>
-    `;
-  
-    featuredProductsContainer.appendChild(productCard);
-  });
-*/
-
 
 
 const selectedIds = [1, 51, 7, 18, 20];
