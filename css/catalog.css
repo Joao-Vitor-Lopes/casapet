@@ -1,0 +1,59 @@
+.itens-catalog{
+
+    margin-top: 20%;
+}
+
+.search{
+  width: 100%;
+  background-color: #eee;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 10%;
+  position: relative;
+}
+
+input{
+  width: 30%;
+  height: 30px;
+  padding-left: 20px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+#itens-list{
+    display: block;
+    width: 30%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+}
+
+#itens-list li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border: 1px solid #ddd;
+    background: #f6f6f6;
+    padding: 12px;
+    
+}
+
+#itens-list li a:hover{
+
+    background-color: #eee;
+}
+
+.item-name{
+
+    margin-left: 15px;
+
+}
